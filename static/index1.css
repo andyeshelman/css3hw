@@ -1,0 +1,143 @@
+
+body {
+    font-family: "Rubik";
+    background-color: #9EABC0;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+header {
+
+    height: 30%;
+    position: relative;
+    display: flex;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-family: "Alice";
+    position: absolute;
+    font-size: 9vw;
+    top: 18%;
+    left: 13%;
+    color: #5A7BA2;
+}
+
+#middle {
+    display: flex;
+    height: 60%;
+    border-top: 5px solid #394659;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #FEF0EC;
+    padding: 5%;
+    border-right: 5px solid #394659;
+}
+
+.nav {
+    height: 15%;
+    width: 100%;
+    font-size: 5vw;
+    background-color: #FEF0EC;
+    color: #394659;
+}
+
+.nav:hover {
+    background-color: #394659;
+    color: #FEF0EC;
+}
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10%;
+    color: #394659;
+}
+
+h3 {
+    margin-bottom: -10px;
+    font-size: 22.5;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #394659;
+    color: #FEF0EC;
+    padding: 2% 0% 2% 0%;
+}
+
+.links {
+    background-color: #394659;
+    color: #FEF0EC;
+    border: 3px solid #394659;
+    font-size: 3vw;
+    text-align: center;
+    padding: 1% 3% 1% 3%;
+}
+
+.links:hover {
+    border-color: #FEF0EC;
+}
+
+@media only screen and (min-width: 900px) {
+    #middle {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 5px solid #394659;
+        padding: 0;
+    }
+
+    .nav {
+        background-color: #394659;
+        color: #FEF0EC;
+    }
+
+    .nav:hover {
+        background-color: #FEF0EC;
+        color: #394659;
+    }
+    h3 {
+        font-size: 2.5vw;
+    }
+    p {
+        font-size: 1.8vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 21.6px;
+    }
+    .links {
+        font-size: 36px;
+    }
+}
